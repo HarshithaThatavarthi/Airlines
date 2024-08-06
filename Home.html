@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Available.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Home.html">Booking's</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href=Contact-Us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Airline</h1>
+            <p>Experience the best in-flight services and comfortable travel.</p>
+        </section>
+        <section class="booking-form">
+            <h2>Book Your Flight</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="class">Class:</label>
+                <select id="class" name="class" required>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First</option>
+                </select>
+
+                <button type="submit">Book Ticket</button>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+    </main>
+    <footer>&copy;Airline ,,,All rights are reserved..</footer>
+    <script src="script.js"></script>
+</body>
+</html>

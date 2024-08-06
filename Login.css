@@ -1,0 +1,9 @@
+body{
+    background-image: url(loginbg.jpeg);
+    background-size: cover;
+}
+    img{
+        float:left;
+        padding-left:100px;
+        padding-right:200px;
+    }

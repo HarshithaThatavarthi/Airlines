@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Registration.css">
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="Available.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Home.html">Booking's</a></li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href=Contact-Us.html">Contact</a></li>
+        </ul>
+        </nav><br><br>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+      <fieldset>
+        <label for="name">Enter Your First Name: <input id="name" name="first-name" placeholder="name" type="text" required /></label>
+        <label for="last-name" id="name-label">Enter Your Last Name: <input id="last-name" placeholder="lastname" name="last-name" type="text" required /></label>
+        <label for="email-label" id="email-label">Enter Your Email: <input id="email" name="email" placeholder="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" placeholder="number" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" value="a" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" value="b" class="inline" /> Business</label>
+      </fieldset>
+      <fieldset>
+       <label for="age">Input your age (years): <input id="number" placeholder="nnumber" type="number" name="age" min="13" max="120" /></label>         <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" value="t&c" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <a href="Login.html"><input id="submit" type="submit" value="Submit"></a>
+      <footer>&copy;Airline ,,,All rights are reserved..</footer>
+  </body>
+</html>

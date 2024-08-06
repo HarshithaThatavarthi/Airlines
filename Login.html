@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="Head.css">
+        <link rel="stylesheet" href="Login.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            function check1(){
+            var uname=document.form.uname.value;
+            var pass=document.form.password.value;
+            if(uname==null || uname=="") {
+                alert("Username cannot be blank");
+                return false;
+            }else if(pass.length<6){
+            alert("Password cannot be blank");
+            return false;
+           }
+            return true; 
+        }
+            </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="Available.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Home.html">Booking's</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Contact-Us.html">Contact</a></li>
+            </ul>
+            </nav><br><br>
+            <form name="form" action="Home.html" onsubmit="return check1(this)">
+                <div class="container"></div>
+                    <h2>Login Page</h2><br> 
+                <div class="input-group" style="margin-left: 20px;">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+                 <input type="text" name="uname" placeholder="Enter Username" class="form-control" style="width: 200px; flex-direction: column-reverse;"><br>
+                </div>
+                <br>
+                 <div class="input-group" style="margin-left: 20px;">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" style="width: 200px" type="password" class="form-control" name="password" placeholder="Password"><br> 
+                </div><br><br>
+                <label for="referrer">From:
+                <select id="dropdown" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">Hyderabad</option>
+                  <option value="2">Bangalore</option>
+                  <option value="3">Chennai</option>
+                  <option value="4">Vizag</option>
+                </select>
+              </label>
+      
+                <br>
+                <br> 
+                <input type="submit" class="btn btn-info">       
+            </div>
+            <footer>&copy;Airline ,,,All rights are reserved..</footer>
+    </body>
+</html>

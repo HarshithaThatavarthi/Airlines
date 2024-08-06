@@ -1,0 +1,24 @@
+.a{
+  text-decoration: none;
+  color:blue;
+}
+  figcaption{
+    text-align: center;
+    font-size:18px;
+    color:white;
+  }
+  .column {
+    float: left;
+    padding: 15px;
+    padding-left:90px;
+    padding-right:20px;
+    margin-top:20px;
+    color:white;
+}
+body{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(8, 7, 7, 0.5)),to(rgba(0,0,0,0.5))),url(mainbg.jpeg);
+   background-position: center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
